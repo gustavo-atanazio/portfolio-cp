@@ -18,13 +18,13 @@ function Contact() {
   }
 
   return (
-    <section className='px-6'>
+    <section className='px-6 flex flex-col'>
       <h2 className='text-2xl font-medium text-center mb-4'>
         Me mande um email
       </h2>
 
       <form
-        className='flex flex-col gap-4'
+        className='flex flex-col gap-4 self-center w-full md:max-w-[50%]'
         onSubmit={handleSubmit}
       >
         <div className='flex flex-col gap-2'>
@@ -52,7 +52,7 @@ function Contact() {
         <div className='flex flex-col gap-2'>
           <label htmlFor='message'>Mensagem</label>
           <textarea
-            className='outline-0 p-2 text-[#151826] rounded-md'
+            className='outline-0 p-2 text-[#151826] rounded-md min-h-24'
             type='text'
             name='message'
             value={message}
