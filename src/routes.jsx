@@ -13,10 +13,10 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home/> },
       { path: '/projetos', element: <Projects/> },
-      { path: '/contato', element: <Contact/> }
+      { path: '/contato', element: <Contact/> },
+      { path: '*', element: <NotFound/> }
     ]
-  },
-  { path: '*', element: <NotFound/> }
+  }
 ]);
 
 function Routes() { return <RouterProvider router={router}/>; }
