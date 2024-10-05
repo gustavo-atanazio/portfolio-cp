@@ -9,7 +9,9 @@ function Projects() {
           className='flex flex-col justify-between md:gap-4 border rounded-lg p-2 md:p-4'
           key={index}
         >
-          <h4>{name}</h4>
+          <h4 className='font-semibold'>
+            {name}
+          </h4>
           <p className='text-sm'>
             {description}
           </p>
