@@ -7,7 +7,7 @@ function Layout() {
     <>
       <Header/>
 
-      <main className='h-[70vh]'>
+      <main className='h-[70vh] md:content-center'>
         <Outlet/>
       </main>
 
